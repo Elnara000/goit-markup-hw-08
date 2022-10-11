@@ -1,0 +1,96 @@
+.hero {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--hero-bgd);
+
+	padding-top: 118px;
+	padding-bottom: 118px;
+
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../header/header-img_sm-@1x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(../header/header-img_sm-@2x.png);
+	}
+
+	@media screen and (min-width: 481px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../header/header-img_md-@1x.png);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(../header/header-img_md-@2x.png);
+		}
+	}
+	@media screen and (min-width: 769px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../header/header-img_lg-@1x.png);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(../header/header-img_lg-@2x.png);
+		}
+	}
+
+	// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	// 	.box {
+	// 		background-image: url("photo@2x.png");
+	// 	}
+	// }
+}
+
+.hero__header {
+	color: var(--white-text-color);
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.61;
+	letter-spacing: 0.06em;
+	text-align: center;
+	text-transform: uppercase;
+	width: 360px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: 1.36em;
+		width: 696px;
+	}
+}
+
+.hero__button {
+	color: var(--white-text-color);
+	background-color: var(--accent-color);
+	cursor: pointer;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	font-family: inherit;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 24px;
+	border-radius: 4px;
+	border: none;
+
+	transition: background-color var(--animation);
+
+	&:focus,
+	&:hover {
+		background-color: var(--active-hero-button);
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 10px 32px;
+	}
+}
