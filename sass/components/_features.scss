@@ -8,30 +8,31 @@
 	gap: 30px;
 	flex-wrap: wrap;
 
+	@media screen and (min-width: 768px) {
+		justify-content: normal;
+	}
+
 	@media screen and (min-width: 1200px) {
 		flex-wrap: nowrap;
 	}
 }
 
 .features__item {
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+	@media screen and (min-width: 1200px) {
+		width: 270px;
+	}
 	&::before {
 		content: "";
 		display: block;
-		width: 450px;
 		height: 120px;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-color: var(--portfolio-buttons-filter-grey);
 		border-radius: 4px;
 		margin-bottom: 30px;
-
-		@media screen and (min-width: 768px) {
-			width: 354px;
-			flex-basis: calc((100% - 60px) / 2);
-		}
-		@media screen and (min-width: 1200px) {
-			width: 270px;
-		}
 	}
 
 	&--icon-antenna::before {
