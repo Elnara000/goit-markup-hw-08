@@ -13,13 +13,17 @@
 	@media screen and (min-width: 768px) {
 		padding-top: 0;
 		padding-bottom: 0;
+		
+	}
+	@media screen and (min-width: 1200px) {
+		justify-content: start;
 	}
 }
 
 .header__logo {
 	margin-right: 0;
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 768px) {
 		margin-right: 93px;
 	}
 }
@@ -40,6 +44,10 @@
 		align-items: flex-start;
 		gap: 10px;
 	}
+
+		@media screen and (min-width: 768px) {
+			margin-left: auto;
+		}
 }
 
 .header__item:first-child {

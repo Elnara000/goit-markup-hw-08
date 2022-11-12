@@ -41,7 +41,8 @@
 .mobile-socials {
 	display: flex;
 
-	margin-bottom: 48px;
+	flex-wrap: wrap;
+	row-gap: 10px;
 }
 
 .mob-item {

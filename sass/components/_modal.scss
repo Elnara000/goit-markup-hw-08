@@ -19,7 +19,7 @@
 }
 
 .modal {
-	width: 528px;
+	width: 300px;
 	background-color: #fff;
 	border-radius: 4px;
 	padding: 40px;
@@ -31,7 +31,7 @@
 	transition: scale var(--animation), translate var(--animation);
 
 	@media screen and (max-width: 1199px) {
-		width: 450px;
+		max-width: 450px;
 	}
 }
 
